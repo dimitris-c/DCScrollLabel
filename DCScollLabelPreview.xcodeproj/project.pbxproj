@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F202F741923F4CD00FFB404 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F202F731923F4CD00FFB404 /* Foundation.framework */; };
+		6F202F761923F4CD00FFB404 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F202F751923F4CD00FFB404 /* CoreGraphics.framework */; };
+		6F202F781923F4CD00FFB404 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F202F771923F4CD00FFB404 /* UIKit.framework */; };
+		6F202F7E1923F4CD00FFB404 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F202F7C1923F4CD00FFB404 /* InfoPlist.strings */; };
+		6F202F801923F4CD00FFB404 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F202F7F1923F4CD00FFB404 /* main.m */; };
+		6F202F841923F4CD00FFB404 /* DCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F202F831923F4CD00FFB404 /* DCAppDelegate.m */; };
+		6F202F871923F4CD00FFB404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F202F851923F4CD00FFB404 /* Main.storyboard */; };
+		6F202F8A1923F4CD00FFB404 /* DCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F202F891923F4CD00FFB404 /* DCViewController.m */; };
+		6F202F8C1923F4CD00FFB404 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F202F8B1923F4CD00FFB404 /* Images.xcassets */; };
+		6F202F931923F4CD00FFB404 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F202F921923F4CD00FFB404 /* XCTest.framework */; };
+		6F202F941923F4CE00FFB404 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F202F731923F4CD00FFB404 /* Foundation.framework */; };
+		6F202F951923F4CE00FFB404 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F202F771923F4CD00FFB404 /* UIKit.framework */; };
+		6F202F9D1923F4CE00FFB404 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F202F9B1923F4CE00FFB404 /* InfoPlist.strings */; };
+		6F202F9F1923F4CE00FFB404 /* DCScollLabelPreviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F202F9E1923F4CE00FFB404 /* DCScollLabelPreviewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F202F961923F4CE00FFB404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F202F681923F4CD00FFB404 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F202F6F1923F4CD00FFB404;
+			remoteInfo = DCScollLabelPreview;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F202F701923F4CD00FFB404 /* DCScollLabelPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCScollLabelPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F202F731923F4CD00FFB404 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6F202F751923F4CD00FFB404 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6F202F771923F4CD00FFB404 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6F202F7B1923F4CD00FFB404 /* DCScollLabelPreview-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCScollLabelPreview-Info.plist"; sourceTree = "<group>"; };
+		6F202F7D1923F4CD00FFB404 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6F202F7F1923F4CD00FFB404 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6F202F811923F4CD00FFB404 /* DCScollLabelPreview-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCScollLabelPreview-Prefix.pch"; sourceTree = "<group>"; };
+		6F202F821923F4CD00FFB404 /* DCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCAppDelegate.h; sourceTree = "<group>"; };
+		6F202F831923F4CD00FFB404 /* DCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCAppDelegate.m; sourceTree = "<group>"; };
+		6F202F861923F4CD00FFB404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F202F881923F4CD00FFB404 /* DCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCViewController.h; sourceTree = "<group>"; };
+		6F202F891923F4CD00FFB404 /* DCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCViewController.m; sourceTree = "<group>"; };
+		6F202F8B1923F4CD00FFB404 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6F202F911923F4CD00FFB404 /* DCScollLabelPreviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCScollLabelPreviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F202F921923F4CD00FFB404 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6F202F9A1923F4CE00FFB404 /* DCScollLabelPreviewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCScollLabelPreviewTests-Info.plist"; sourceTree = "<group>"; };
+		6F202F9C1923F4CE00FFB404 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6F202F9E1923F4CE00FFB404 /* DCScollLabelPreviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCScollLabelPreviewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F202F6D1923F4CD00FFB404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F202F761923F4CD00FFB404 /* CoreGraphics.framework in Frameworks */,
+				6F202F781923F4CD00FFB404 /* UIKit.framework in Frameworks */,
+				6F202F741923F4CD00FFB404 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F202F8E1923F4CD00FFB404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F202F931923F4CD00FFB404 /* XCTest.framework in Frameworks */,
+				6F202F951923F4CE00FFB404 /* UIKit.framework in Frameworks */,
+				6F202F941923F4CE00FFB404 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F202F671923F4CD00FFB404 = {
+			isa = PBXGroup;
+			children = (
+				6F202F791923F4CD00FFB404 /* DCScollLabelPreview */,
+				6F202F981923F4CE00FFB404 /* DCScollLabelPreviewTests */,
+				6F202F721923F4CD00FFB404 /* Frameworks */,
+				6F202F711923F4CD00FFB404 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F202F711923F4CD00FFB404 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F202F701923F4CD00FFB404 /* DCScollLabelPreview.app */,
+				6F202F911923F4CD00FFB404 /* DCScollLabelPreviewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F202F721923F4CD00FFB404 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F202F731923F4CD00FFB404 /* Foundation.framework */,
+				6F202F751923F4CD00FFB404 /* CoreGraphics.framework */,
+				6F202F771923F4CD00FFB404 /* UIKit.framework */,
+				6F202F921923F4CD00FFB404 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F202F791923F4CD00FFB404 /* DCScollLabelPreview */ = {
+			isa = PBXGroup;
+			children = (
+				6F202F821923F4CD00FFB404 /* DCAppDelegate.h */,
+				6F202F831923F4CD00FFB404 /* DCAppDelegate.m */,
+				6F202F851923F4CD00FFB404 /* Main.storyboard */,
+				6F202F881923F4CD00FFB404 /* DCViewController.h */,
+				6F202F891923F4CD00FFB404 /* DCViewController.m */,
+				6F202F8B1923F4CD00FFB404 /* Images.xcassets */,
+				6F202F7A1923F4CD00FFB404 /* Supporting Files */,
+			);
+			path = DCScollLabelPreview;
+			sourceTree = "<group>";
+		};
+		6F202F7A1923F4CD00FFB404 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F202F7B1923F4CD00FFB404 /* DCScollLabelPreview-Info.plist */,
+				6F202F7C1923F4CD00FFB404 /* InfoPlist.strings */,
+				6F202F7F1923F4CD00FFB404 /* main.m */,
+				6F202F811923F4CD00FFB404 /* DCScollLabelPreview-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F202F981923F4CE00FFB404 /* DCScollLabelPreviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F202F9E1923F4CE00FFB404 /* DCScollLabelPreviewTests.m */,
+				6F202F991923F4CE00FFB404 /* Supporting Files */,
+			);
+			path = DCScollLabelPreviewTests;
+			sourceTree = "<group>";
+		};
+		6F202F991923F4CE00FFB404 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F202F9A1923F4CE00FFB404 /* DCScollLabelPreviewTests-Info.plist */,
+				6F202F9B1923F4CE00FFB404 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F202F6F1923F4CD00FFB404 /* DCScollLabelPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F202FA21923F4CE00FFB404 /* Build configuration list for PBXNativeTarget "DCScollLabelPreview" */;
+			buildPhases = (
+				6F202F6C1923F4CD00FFB404 /* Sources */,
+				6F202F6D1923F4CD00FFB404 /* Frameworks */,
+				6F202F6E1923F4CD00FFB404 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCScollLabelPreview;
+			productName = DCScollLabelPreview;
+			productReference = 6F202F701923F4CD00FFB404 /* DCScollLabelPreview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F202F901923F4CD00FFB404 /* DCScollLabelPreviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F202FA51923F4CE00FFB404 /* Build configuration list for PBXNativeTarget "DCScollLabelPreviewTests" */;
+			buildPhases = (
+				6F202F8D1923F4CD00FFB404 /* Sources */,
+				6F202F8E1923F4CD00FFB404 /* Frameworks */,
+				6F202F8F1923F4CD00FFB404 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F202F971923F4CE00FFB404 /* PBXTargetDependency */,
+			);
+			name = DCScollLabelPreviewTests;
+			productName = DCScollLabelPreviewTests;
+			productReference = 6F202F911923F4CD00FFB404 /* DCScollLabelPreviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F202F681923F4CD00FFB404 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Dimitris C.";
+				TargetAttributes = {
+					6F202F901923F4CD00FFB404 = {
+						TestTargetID = 6F202F6F1923F4CD00FFB404;
+					};
+				};
+			};
+			buildConfigurationList = 6F202F6B1923F4CD00FFB404 /* Build configuration list for PBXProject "DCScollLabelPreview" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F202F671923F4CD00FFB404;
+			productRefGroup = 6F202F711923F4CD00FFB404 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F202F6F1923F4CD00FFB404 /* DCScollLabelPreview */,
+				6F202F901923F4CD00FFB404 /* DCScollLabelPreviewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F202F6E1923F4CD00FFB404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F202F8C1923F4CD00FFB404 /* Images.xcassets in Resources */,
+				6F202F7E1923F4CD00FFB404 /* InfoPlist.strings in Resources */,
+				6F202F871923F4CD00FFB404 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F202F8F1923F4CD00FFB404 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F202F9D1923F4CE00FFB404 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F202F6C1923F4CD00FFB404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F202F801923F4CD00FFB404 /* main.m in Sources */,
+				6F202F8A1923F4CD00FFB404 /* DCViewController.m in Sources */,
+				6F202F841923F4CD00FFB404 /* DCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F202F8D1923F4CD00FFB404 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F202F9F1923F4CE00FFB404 /* DCScollLabelPreviewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F202F971923F4CE00FFB404 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F202F6F1923F4CD00FFB404 /* DCScollLabelPreview */;
+			targetProxy = 6F202F961923F4CE00FFB404 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F202F7C1923F4CD00FFB404 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F202F7D1923F4CD00FFB404 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6F202F851923F4CD00FFB404 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F202F861923F4CD00FFB404 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F202F9B1923F4CE00FFB404 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F202F9C1923F4CE00FFB404 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F202FA01923F4CE00FFB404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6F202FA11923F4CE00FFB404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F202FA31923F4CE00FFB404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCScollLabelPreview/DCScollLabelPreview-Prefix.pch";
+				INFOPLIST_FILE = "DCScollLabelPreview/DCScollLabelPreview-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6F202FA41923F4CE00FFB404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCScollLabelPreview/DCScollLabelPreview-Prefix.pch";
+				INFOPLIST_FILE = "DCScollLabelPreview/DCScollLabelPreview-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6F202FA61923F4CE00FFB404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DCScollLabelPreview.app/DCScollLabelPreview";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCScollLabelPreview/DCScollLabelPreview-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DCScollLabelPreviewTests/DCScollLabelPreviewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6F202FA71923F4CE00FFB404 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DCScollLabelPreview.app/DCScollLabelPreview";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCScollLabelPreview/DCScollLabelPreview-Prefix.pch";
+				INFOPLIST_FILE = "DCScollLabelPreviewTests/DCScollLabelPreviewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F202F6B1923F4CD00FFB404 /* Build configuration list for PBXProject "DCScollLabelPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F202FA01923F4CE00FFB404 /* Debug */,
+				6F202FA11923F4CE00FFB404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F202FA21923F4CE00FFB404 /* Build configuration list for PBXNativeTarget "DCScollLabelPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F202FA31923F4CE00FFB404 /* Debug */,
+				6F202FA41923F4CE00FFB404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F202FA51923F4CE00FFB404 /* Build configuration list for PBXNativeTarget "DCScollLabelPreviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F202FA61923F4CE00FFB404 /* Debug */,
+				6F202FA71923F4CE00FFB404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F202F681923F4CD00FFB404 /* Project object */;
+}
