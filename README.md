@@ -3,4 +3,4 @@ DCScrollLabel
 
 A simple scroll label for iOS
 
-##TODO: Add a better readme file. 
+#TODO: Add a better readme file. 
