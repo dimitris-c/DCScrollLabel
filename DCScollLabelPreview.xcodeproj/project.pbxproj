@@ -19,8 +19,6 @@
 		6F202F931923F4CD00FFB404 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F202F921923F4CD00FFB404 /* XCTest.framework */; };
 		6F202F941923F4CE00FFB404 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F202F731923F4CD00FFB404 /* Foundation.framework */; };
 		6F202F951923F4CE00FFB404 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F202F771923F4CD00FFB404 /* UIKit.framework */; };
-		6F202F9D1923F4CE00FFB404 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F202F9B1923F4CE00FFB404 /* InfoPlist.strings */; };
-		6F202F9F1923F4CE00FFB404 /* DCScollLabelPreviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F202F9E1923F4CE00FFB404 /* DCScollLabelPreviewTests.m */; };
 		6F202FAB1923F60600FFB404 /* DCScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F202FAA1923F60600FFB404 /* DCScrollLabel.m */; };
 		6F9AB8B619252E7E00A3AE8D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9AB8B519252E7E00A3AE8D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -52,9 +50,6 @@
 		6F202F8B1923F4CD00FFB404 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6F202F911923F4CD00FFB404 /* DCScollLabelPreviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCScollLabelPreviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F202F921923F4CD00FFB404 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6F202F9A1923F4CE00FFB404 /* DCScollLabelPreviewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCScollLabelPreviewTests-Info.plist"; sourceTree = "<group>"; };
-		6F202F9C1923F4CE00FFB404 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6F202F9E1923F4CE00FFB404 /* DCScollLabelPreviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCScollLabelPreviewTests.m; sourceTree = "<group>"; };
 		6F202FA91923F60600FFB404 /* DCScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCScrollLabel.h; sourceTree = "<group>"; };
 		6F202FAA1923F60600FFB404 /* DCScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCScrollLabel.m; sourceTree = "<group>"; };
 		6F9AB8B519252E7E00A3AE8D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -90,7 +85,6 @@
 			children = (
 				6F202FA81923F60600FFB404 /* DCScrollLabel */,
 				6F202F791923F4CD00FFB404 /* DCScollLabelPreview */,
-				6F202F981923F4CE00FFB404 /* DCScollLabelPreviewTests */,
 				6F202F721923F4CD00FFB404 /* Frameworks */,
 				6F202F711923F4CD00FFB404 /* Products */,
 			);
@@ -138,24 +132,6 @@
 				6F202F7C1923F4CD00FFB404 /* InfoPlist.strings */,
 				6F202F7F1923F4CD00FFB404 /* main.m */,
 				6F202F811923F4CD00FFB404 /* DCScollLabelPreview-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6F202F981923F4CE00FFB404 /* DCScollLabelPreviewTests */ = {
-			isa = PBXGroup;
-			children = (
-				6F202F9E1923F4CE00FFB404 /* DCScollLabelPreviewTests.m */,
-				6F202F991923F4CE00FFB404 /* Supporting Files */,
-			);
-			path = DCScollLabelPreviewTests;
-			sourceTree = "<group>";
-		};
-		6F202F991923F4CE00FFB404 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6F202F9A1923F4CE00FFB404 /* DCScollLabelPreviewTests-Info.plist */,
-				6F202F9B1923F4CE00FFB404 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -256,7 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F202F9D1923F4CE00FFB404 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F202F9F1923F4CE00FFB404 /* DCScollLabelPreviewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,14 +281,6 @@
 				6F202F861923F4CD00FFB404 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6F202F9B1923F4CE00FFB404 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6F202F9C1923F4CE00FFB404 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
