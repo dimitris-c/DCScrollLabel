@@ -14,11 +14,6 @@
 @interface DCScrollLabel : UIView
 
 /**
- Whether the label is scrolling or not.
- */
-@property (nonatomic, assign, readonly) BOOL isScrolling;
-
-/**
  An array of texts that the label will display one after another
  */
 @property (nonatomic, strong) NSMutableArray *textsArray;
@@ -27,9 +22,8 @@
 @property (nonatomic, strong) UIColor *textColor;
 @property (nonatomic, strong) UIFont *font;
 
-/**
-    The speed of the scrolling.
- */
+@property (nonatomic, assign, readonly) BOOL isScrolling;
+
 @property (nonatomic, assign) CGFloat scrollSpeed;
 
 /**
@@ -45,24 +39,9 @@
 // TODO: unimplemented
 @property (nonatomic, assign) NSInteger repeatCount;
 
-/**
- Initializes and returns a newly allocated DCScrollLabel object with the specified frame rectangle and an array of texts to be shown.
- 
- @param frame A rectangle for the label view
- @param textsArray A mutable array that holds any text to be shown.
- 
- */
 - (id)initWithFrame:(CGRect)frame andTexts:(NSMutableArray *)textsArray;
 
-
-/**
- Starts the scrolling of the label.
- */
 - (void)startScrolling;
-
-/**
- Stops and resets the scrolling of the label.
- */
 - (void)stopScrolling;
 
 @end
