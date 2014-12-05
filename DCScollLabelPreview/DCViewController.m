@@ -9,6 +9,8 @@
 #import "DCViewController.h"
 #import "DCScrollLabel.h"
 
+
+
 @interface DCViewController ()
 
 @property (nonatomic, strong) DCScrollLabel *scrollLabel;
@@ -20,12 +22,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
     self.view.backgroundColor = [UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    // Implementation Example
     
     _scrollLabel = [[DCScrollLabel alloc] initWithFrame:CGRectMake(50, 150, 200, 40)];
     _scrollLabel.textColor = [UIColor whiteColor];

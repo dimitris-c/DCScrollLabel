@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^VoidBlock)(void);
 
 /**
  A simple scroll label that takes an array of texts and displays them one after another.
@@ -18,7 +19,7 @@
  */
 @property (nonatomic, strong) NSMutableArray *textsArray;
 
-@property (nonatomic) NSTextAlignment textAlignment;
+@property (nonatomic, assign) NSTextAlignment textAlignment;
 @property (nonatomic, strong) UIColor *textColor;
 @property (nonatomic, strong) UIFont *font;
 

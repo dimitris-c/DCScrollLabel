@@ -7,11 +7,12 @@
 
 #import "DCScrollLabel.h"
 
-static const NSUInteger kTotalLabels = 2;
-static const CGFloat kDefaultScrollSpeed = 30.0f;
-static const CGFloat kDefaultPauseDelay = 2.0f;
-static const CGFloat kDefaultLabelPadding = 5.0f;
-static const NSInteger kDefaultRepeatCount = -1;
+// Initial values
+static const NSUInteger kTotalLabels            = 2;
+static const CGFloat    kDefaultScrollSpeed     = 30.0f;
+static const CGFloat    kDefaultPauseDelay      = 2.0f;
+static const CGFloat    kDefaultLabelPadding    = 5.0f;
+static const NSInteger  kDefaultRepeatCount     = -1;
 
 @interface DCScrollLabel ()
 
@@ -29,10 +30,10 @@ static const NSInteger kDefaultRepeatCount = -1;
     
 }
 
-#pragma mark - Public UIView Methods -
+#pragma mark - Initializing Methods -
 
 - (id)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
+    self = [self initWithFrame:frame andTexts:nil];
     if (self) {
         [self setupLabels];
     }
@@ -46,7 +47,8 @@ static const NSInteger kDefaultRepeatCount = -1;
         
         [self setupLabels];
         
-        self.textsArray = textsArray;
+        if (textsArray)
+            self.textsArray = textsArray;
         
     }
     return self;
@@ -56,12 +58,12 @@ static const NSInteger kDefaultRepeatCount = -1;
 
 - (void)setupLabels {
     
-    _scrollSpeed = kDefaultScrollSpeed;
-    _pauseDelay = kDefaultPauseDelay;
-    _labelPadding = kDefaultLabelPadding;
-    _repeatCount = kDefaultRepeatCount;
+    _scrollSpeed    = kDefaultScrollSpeed;
+    _pauseDelay     = kDefaultPauseDelay;
+    _labelPadding   = kDefaultLabelPadding;
+    _repeatCount    = kDefaultRepeatCount;
     
-    _labelsArray = [[NSMutableArray alloc] initWithCapacity:kTotalLabels];
+    _labelsArray    = [[NSMutableArray alloc] initWithCapacity:kTotalLabels];
     
     for (int i = 0; i < kTotalLabels; i++) {
         
@@ -90,6 +92,8 @@ static const NSInteger kDefaultRepeatCount = -1;
 - (void)setTextsArray:(NSMutableArray *)textsArray {
     
     _textsArray = textsArray;
+    
+    if (!_labelsArray) return;
     
     NSInteger index = 0;
     
@@ -156,12 +160,14 @@ static const NSInteger kDefaultRepeatCount = -1;
     
     CGFloat labelDuration = labelWidth / _scrollSpeed;
     
+    
+    UILabel *firstLabel = _labelsArray[0];
+    UILabel *secondLabel = _labelsArray[1];
+
     [UIView animateWithDuration:labelDuration
                           delay:_pauseDelay
                         options:UIViewAnimationOptionCurveLinear
                      animations:^ {
-                         UILabel *firstLabel = _labelsArray[0];
-                         UILabel *secondLabel = _labelsArray[1];
                          
                          CGRect frame = firstLabel.frame;
                          frame.origin.x = - (CGRectGetWidth(firstLabel.frame) + _labelPadding);
@@ -177,13 +183,11 @@ static const NSInteger kDefaultRepeatCount = -1;
                      completion:^(BOOL finished) {
 
                          if (finished) {
-                             UILabel *label = _labelsArray[0];
-                             UILabel *secondLabel = _labelsArray[1];
                              
-                             CGRect frame = label.frame;
+                             CGRect frame = firstLabel.frame;
                              frame.origin.x = CGRectGetWidth(secondLabel.frame) + _labelPadding;
                              
-                             label.frame = frame;
+                             firstLabel.frame = frame;
                              
                              // swap the labels on the array
                              [_labelsArray exchangeObjectAtIndex:0 withObjectAtIndex:1];
@@ -193,7 +197,7 @@ static const NSInteger kDefaultRepeatCount = -1;
                              if (currentLabelTextIndex > _textsArray.count-1) {
                                  currentLabelTextIndex = 0;
                              }
-                             label.text = _textsArray[currentLabelTextIndex];
+                             firstLabel.text = _textsArray[currentLabelTextIndex];
                          
                              [self startScrolling];
                          }
