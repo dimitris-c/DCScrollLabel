@@ -4,7 +4,7 @@ DCScrollLabel
 A simple scroll label for iOS.
 
 Basic Usage
-```
+``` objective-c
 _scrollLabel = [[DCScrollLabel alloc] initWithFrame:CGRectMake(50, 150, 200, 40)];
 _scrollLabel.textColor = [UIColor whiteColor];
 _scrollLabel.textsArray = [@[@"First Text Goes Here",
