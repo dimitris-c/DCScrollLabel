@@ -1,7 +1,7 @@
 DCScrollLabel
 =============
 
-A simple scroll label for iOS.
+A simple scroll label for iOS. It takes an array of NSString objects and displays them one after the other.
 
 Basic Usage
 ``` objective-c
