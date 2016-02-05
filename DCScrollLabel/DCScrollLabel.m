@@ -113,9 +113,11 @@ static const NSInteger  kDefaultRepeatCount     = -1;
     CGFloat labelOriginX = 0;
     
     for (UILabel *label in _labelsArray) {
+        [label sizeToFit];
+        
         CGRect frame = label.frame;
         frame.origin.x = labelOriginX;
-        frame.size.width = CGRectGetWidth(self.frame);
+        frame.size.width = MAX(CGRectGetWidth(self.frame),CGRectGetWidth(label.frame));
         frame.size.height = CGRectGetHeight(self.frame);
         label.frame = frame;
         
