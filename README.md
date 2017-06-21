@@ -1,7 +1,7 @@
 DCScrollLabel
 =============
 
-[![Build Status](https://travis-ci.org/dimmdesign/DCScrollLabel.svg)](https://travis-ci.org/dimmdesign/DCScrollLabel)
+[![Build Status](https://travis-ci.org/dimitris-c/DCScrollLabel.svg)](https://travis-ci.org/dimitris-c/DCScrollLabel)
 
 A simple scroll label for iOS. 
 It takes an array of NSString objects and displays them one after the other.
